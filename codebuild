@@ -1,15 +1,29 @@
-public class MessageUtil {
-private String message;
-public MessageUtil(String message) {
-this.message = message;
-}
-public String printMessage() {
-System.out.println(message);
-return message;
-}
-public String salutationMessage() {
-message = "Hi!" + message;
-System.out.println(message);
-return message;
-}
-}
+ <settings>
+  <profiles>
+    <profile>
+      <id>securecentral</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <!--Override the repository (and pluginRepository) "central" from the
+         Maven Super POM -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+</profiles>
