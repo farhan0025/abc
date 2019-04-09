@@ -1,0 +1,9 @@
+{
+  "Parameters" : {
+    "DBName" : "farhan",
+    "DBPassword" : "14march1990",
+    "DBRootPassword" : "14march1990",
+    "DBUser" : "farhan",    
+    "KeyName" : "Webserver"
+  }
+}
